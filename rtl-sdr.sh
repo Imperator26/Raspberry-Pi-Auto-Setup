@@ -8,5 +8,7 @@ make
 sudo make install
 sudo cp ../rtl-sdr.rules /etc/udev/rules.d/
 sudo ldconfig
-echo "blacklist dvb_usb_rtl28xxu\nblacklist rtl2832\nblacklist rtl2830" | sudo tee -a /etc/modprobe.d/blacklist-rtl.conf
+echo "blacklist dvb_usb_rtl28xxu
+blacklist rtl2832
+blacklist rtl2830" | sudo tee -a /etc/modprobe.d/blacklist-rtl.conf
 echo "Reboot to complete the installation."
